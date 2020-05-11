@@ -5,18 +5,7 @@ import MultiBackend from 'react-dnd-multi-backend';
 import HTML5toTouch from './dnd/HTML5toTouch';
 import DraggableGridItem from './dnd/DraggableGridItem';
 import Grid from './grid/Grid';
-
-
-const initialItems = [
-  { id: 1, index: 1, content: 'Hello' },
-  { id: 2, index: 2, content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.' },
-  { id: 3, index: 3, content: 'Hey you!' },
-  { id: 4, index: 4, content: 'Hi there!' },
-  { id: 5, index: 5, content: 'Hola!' },
-  { id: 6, index: 6, content: 'Hi' },
-  { id: 7, index: 7, content: 'Whats up!' },
-  { id: 8, index: 8, content: 'Sup!' },
-]
+import initialItems from './initialData';
 
 export default function App() {
   const [ list, setList ] = useState(initialItems);
