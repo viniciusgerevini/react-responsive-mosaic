@@ -20,16 +20,5 @@ describe('Grid test', () => {
 
     expect(getByText(/hello/i)).toBeInTheDocument();
   });
-
-  it('caculates item height for grid', () => {
-    const items = [
-      "hello"
-    ];
-    const { getByText } = renderComponent({ items });
-
-    const item = getByText('hello').parentNode;
-
-    expect(item.style.gridRowEnd).toEqual("span 1");
-  });
 });
 

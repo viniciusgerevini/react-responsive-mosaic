@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import './Grid.css';
+import styled from 'styled-components';
 
 export default function Grid(props) {
   const gridRef = useRef(null);
@@ -11,9 +11,9 @@ export default function Grid(props) {
   });
 
   return (
-    <div ref={gridRef} className="grid-wrapper">
+    <GridWrapper ref={gridRef}>
       {children}
-    </div>
+    </GridWrapper>
   );
 }
 
@@ -29,3 +29,9 @@ const adjustGridItemsHeight = (grid) => {
   }
 }
 
+const GridWrapper = styled.div `
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+  grid-auto-rows: 180px;
+`;

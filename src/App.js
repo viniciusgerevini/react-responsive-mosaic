@@ -1,11 +1,10 @@
 import React from 'react';
 import Grid from './Grid';
 import GridItem from './GridItem';
-import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <div>
       <h1>Responsive Drag-and-Drop Grid</h1>
       <Grid>
         <GridItem>Hello</GridItem>
@@ -28,5 +27,3 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     </div>
   );
 }
-
-export default App;

@@ -1,6 +1,0 @@
-.grid-wrapper {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
-  grid-auto-rows: 180px;
-}
