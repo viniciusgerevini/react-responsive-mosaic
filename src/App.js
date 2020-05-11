@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { DndProvider } from 'react-dnd';
 import MultiBackend from 'react-dnd-multi-backend';
 import HTML5toTouch from './dnd/HTML5toTouch';
-import Grid from './Grid';
-import GridItem from './GridItem';
 import DraggableGridItem from './dnd/DraggableGridItem';
+import Grid from './grid/Grid';
+import GridItem from './grid/GridItem';
 
 
 const initialItems = [
