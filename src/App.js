@@ -41,5 +41,9 @@ export default function App() {
 const sortItems = (a, b) => a.index - b.index;
 
 const AppWrapper = styled.div `
-  padding: 10px;
+  padding: 10px 200px;
+
+  @media (max-width: 800px) {
+    padding: 10px;
+  }
 `;
