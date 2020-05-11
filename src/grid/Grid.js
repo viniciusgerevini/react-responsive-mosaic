@@ -17,6 +17,10 @@ export default function Grid(props) {
   );
 }
 
+// This function adjust each item in the grid accordlying
+// with their height.
+// Each item has to have an inner container, used to calculate
+// its overflow. Check GridItem component for an example.
 const adjustGridItemsHeight = (grid) => {
   const items = grid.children;
 

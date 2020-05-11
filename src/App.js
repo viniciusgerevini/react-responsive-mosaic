@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import { DndProvider } from 'react-dnd';
 import MultiBackend from 'react-dnd-multi-backend';
 import HTML5toTouch from './dnd/HTML5toTouch';
 import DraggableGridItem from './dnd/DraggableGridItem';
 import Grid from './grid/Grid';
-import GridItem from './grid/GridItem';
 
 
 const initialItems = [
@@ -33,10 +33,9 @@ export default function App() {
 
   return (
     <DndProvider backend={MultiBackend} options={HTML5toTouch}>
-      <div>
+      <AppWrapper>
         <h1>Responsive Drag-and-Drop Grid</h1>
         <Grid>
-          <GridItem>This is a non draggable item</GridItem>
           { list.sort(sortItems).map(item =>
             <DraggableGridItem
               key={item.id}
@@ -45,9 +44,13 @@ export default function App() {
             >{item.content}</DraggableGridItem>
           )}
         </Grid>
-      </div>
+      </AppWrapper>
     </DndProvider>
   );
 }
 
 const sortItems = (a, b) => a.index - b.index;
+
+const AppWrapper = styled.div `
+  padding: 10px;
+`;
