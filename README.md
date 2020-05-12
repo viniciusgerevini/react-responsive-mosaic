@@ -9,7 +9,7 @@ Elements are sorted by index, as a list. This makes it easier to reorder when sc
 
 This is a vertical mosaic, like the one you can find in Google Keep and Pinterest. Because of that, width is fixed (you can change the size if you want), and height is dynamic (you can define max-height).
 
-For a more detailed explanation check this blog post.
+For a more detailed explanation check this [blog post](https://thisisvini.com/responsive-mosaic-with-dnd-reactjs).
 
 ## References
 
