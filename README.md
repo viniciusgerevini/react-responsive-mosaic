@@ -2,8 +2,8 @@
 
 This is an example of how to implement a responsive vertical mosaic with drag-and-drop support in ReactJS.
 
-Here is the live demo.
-Here is a "Google Keep like" example using the same approach.
+Here is the [live demo](https://viniciusgerevini.github.io/react-responsive-mosaic/).
+Here is a ["Google Keep like" example](https://viniciusgerevini.github.io/my-keep/) using the same approach.
 
 Elements are sorted by index, as a list. This makes it easier to reorder when screen size changes. You don't need to set layouts or media-queries. Items will fit the required number of rows automatically.
 
