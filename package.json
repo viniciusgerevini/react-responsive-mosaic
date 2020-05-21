@@ -21,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://viniciusgerevini.github.io/react-responsive-mosaic",
   "eslintConfig": {
     "extends": "react-app"
   },
